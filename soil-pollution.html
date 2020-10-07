@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Soil icon-02.jpeg" type="image/x-icon">
+    <title>SoiL Book - Soil For Live</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="acmeticker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar bg-dark navbar-dark navbar-expand-md py-3">
+    <div class="container">
+        <a href="home.html" class=""><img src="img/Logo (Soil Book).png" alt="logo" id="logo-img">
+        </a>
+        <div class="d-md-none d-block ml-auto">
+            <form class="form-inline">
+                <input type="text" class="form-control " style="display: none; width: 65px; padding: 0 3px;" id="search" name="search" placeholder="Search..">
+                <div class="">
+                    <span onclick="myFunction()" class="fa fa-search text-light ml-1 mr-2" style="font-size: 20px;"></span>
+                </div>
+            </form>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        CONTENTS
+                    </a>
+                    <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="soil-science.html">Soil Science &nbsp; <i class="fa fa-angle-right"></i></a>
+                        <a class="dropdown-item" href="environmental-science.html">Environmental Science &nbsp; <i class="fa fa-angle-right"></i></a>
+                        <a class="dropdown-item" href="disaster-management.html">Disaster Management &nbsp; <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       OTHERS
+                    </a>
+                    <div class="dropdown-menu bg-success" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="environmental-news.html">Environmental News &nbsp; <i class="fa fa-angle-right"></i></a>
+                        <a class="dropdown-item" href="#opinion-calander-section">Opinion &nbsp; <i class="fa fa-angle-right"></i></a>
+                        <a class="dropdown-item" href="environmental-zone.html">Environmental Zone &nbsp; <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+            <!-- Cover Image -->
+<section class="d-none" id="home-img">
+    <div class="dark-overlay">
+        <div class="home-inner">
+            <div class="container">
+                <div class="row pt-3">
+                    <div class="col-9 col-md-5 m-auto">
+                        <form action="">
+                            <div class="input-group mt-md-5 mt-5">
+                                <input type="text" class="form-control pl-3" placeholder="Search..." name="search" id="home-searchBox">
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="submit">
+                                        <span class="fa fa-search text-light"></span> 
+                                    </button> 
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mt-5 text-light">
+                            <h4>
+                                <marquee behavior="scroll" direction="left">
+                                    <canvas id="myCanvas" width="600"></canvas>
+                                </marquee>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                <!-- Back to Top -->
+<section>
+    <a id="back-to-top" href="#" class="btn btn-danger back-to-top" role="button">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</section>
+                <!-- Breaking News -->
+<section style="background-image: linear-gradient(#424547, #43474d, #62666b, #838383);">
+    <div class="container pt-4 pb-3">
+        <div class="row justify-content-between">
+            <div class="col-md-8 col-12">
+                <div class="acme-news-ticker-label">
+                    KEYSTONE &nbsp;<span class="fa fa-arrow-right d-none d-md-inline-block"></span>
+                </div>
+                <div class="acme-news-ticker-box">
+                    <ul id="news-ticker">
+                        <li><a href="soil-definition.html">মৃত্তিকার সংজ্ঞা, এর উপাদান ও প্রকারভেদ</a></li>
+                        <li><a href="jenny-equation.html">মৃত্তিকা গঠনে জেনি'র সমীকরণ, সীমাবদ্ধতা ও Soil Maping এ এর ব্যবহার </a></li>
+                        <li><a href="soil-pollution.html">মৃত্তিকা দূষণ, এর কারণ, প্রকারভেদ ও প্রতিকার</a></li>
+                        <li><a href="soil-fertility.html">মৃত্তিকার উর্বরতা কি, এর শ্রেণিবিন্যাস, উপাদান ও pH মান</a></li>
+                        <li><a href="rock.html">শিলা কি, এর উৎস এবং শ্রেণিবিন্যাস</a></li>
+                        <li><a href="soil-alive.html">মৃত্তিকা একটি জীবন্ত প্রাকৃতিক সত্ত্বা</a></li>
+                        <li><a href="tree-plantation.html">বৃক্ষরোপণ, এর প্রয়োজনীয়তা ও উপকারিতা</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="d-md-block d-none">
+                    <form class="form-inline input-group">
+                        <input type="text" class="form-control p-1 pr-2" style="font-size: 15px; padding-left: 10px !important;" name="search" placeholder="Search . . .">
+                        <span class="fa fa-search text-light bg-success p-2 px-3" style="font-size: 19px; border-radius: 0 4px 4px 0;"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                 <!-- Article Title -->
+<div class="container bg-light pt-4">
+<section id="article-title-section">
+    <div class="home-inner">
+        <div class="row">
+            <div class="col">
+                <ul class="breadcrumb bg-dark text-info">
+                    <li class="breadcrumb-item text-primary">Contents</li>
+                    <li class="breadcrumb-item"><a href="soil-science.html" class="breadcrumb-link">Soil Science</a></li>
+                    <li class="breadcrumb-item">মৃত্তিকা দূষণ</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-light py-md-2 py-1">
+                    <h4 class="text-light py-md-2 py-1" id="article-title">
+                        মৃত্তিকা দূষণ, এর কারণ, প্রকারভেদ ও প্রতিকার
+                    </h4>
+                    <h5 class="py-3">
+                        <i class="fa fa-edit"></i>&nbsp; <span id="article-author"> Mahmudul Hasan Sumon</span>
+                    </h5>
+                    <footer>
+                       <div class="row">
+                           <div class="col-md-4 col-sm-6 col-12">
+                            <i>in : </i>&nbsp; <span id="article-topic"> Soil Science</span>
+                           </div>
+                           <div class="col-md-4 col-sm-6 col-8 my-sm-0 my-3">
+                            <i class="fa fa-calendar"></i>&nbsp; <span> 15 Sep 2020</span>
+                           </div>
+                           <div class="col-md-3 col-4 mt-md-0 mt-3">
+                            <i class="fa fa-eye"></i>&nbsp;
+                            <span> 3</span>
+                           </div>
+                       </div>
+                    </footer>
+                    <div class="row text-center pt-md-4">
+                        <div class="col-md-9 col-12">
+                            <h1 class="display-4">
+                                <i class="fa fa-angle-double-down text-light"></i>
+                            </h1>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+                <!-- Article Section -->
+<div class="container bg-light">
+    <section id="home-article">
+        <div class="row pt-3">
+            <div class="col-md-8 col-12">
+                <!-- Jenny Article Post Section -->
+                <section>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="pt-4" id="jenny-equation">
+                                <h5 class="font-weight-bold">
+                                    মৃত্তিকা দূষণ
+                                </h5><br>
+                                <p>মৃত্তিকা দূষণ বা মাটি দূষণ বলতে রাসায়নিক বর্জ্যের নিক্ষেপ  কিংবা ভূ-গর্ভস্থ  ফাটলের কারণে নিঃসৃত বিষাক্ত রাসায়নিক পদার্থের  মিশ্রণের কারণে  জমির উর্বরতা শক্তি নষ্ট  হওয়াকে বুঝায়।</br>
+                                <br>
+                                <h5 class="font-weight-bold">
+                                    মৃত্তিকা দূষণের শ্রেণিবিন্যাস 
+                                </h5><br>
+                                দূষণের প্রকৃতি অনুসারে মৃত্তিকা দূষণকে নিম্নোক্তভাবে ভাগ করা যায়-</br>
+                                ১. জীব সংক্রান্ত দূষণ।</br>
+                                ২. পরিশোষক দূষণ।</br>
+                                ৩. জৈব পদার্থ ঘটিত দূষণ।</br>
+                                ৪. অজৈব পদার্থ ঘটিত দূষণ।</br>
+                                ৫. তেজস্ক্রিয় পদার্থ ঘটিত দূষণ।</br>
+                                ৬. এসিড দূষণ।</br>
+                                ৭. প্লাস্টিক দূষণ।</br> 
+                                ৮. কীটনাশক ঘটিত দূষণ।</br>
+                                <br>
+                                <div class="text-center">
+                                    <img src="img/soil pollution.jpg" class="img-fluid w-md-50" alt=" মৃত্তিকা দূষণ">
+                                </div> <br>
+                                <h5 class="font-weight-bold">
+                                    মৃত্তিকা দূষণের কারণ 
+                                </h5><br>
+                                ১) ভূ-তলে সংরক্ষিত ট্যাংকের জ্বালানি বিস্ফোরণ। </br>
+                                ২) আগাছানাশক, কীটপতঙ্গ ধ্বংসকারী কীটনাশক এবং সার প্রয়োগ। </br>
+                                ৩) উৎপাদিত শিল্পজাত দ্রব্যকে ভূমিতে সরাসরি নিষ্কাষণ। </br>
+                                ৪) খনিজ দ্রব্য আহরণ।</br>
+                                ৫) কয়লা, ইটভাটার ছাই।</br>
+                                ৬) আবর্জনা ভূমির স্তুপ।</br>
+                                ৭) প্লাস্টিক ও কাচ যেখানে সেখানে ফেলা। </br>
+                                ৮) পয়ঃনিষ্কাষণে ব্যবহৃত পানি ভূমিতে প্রয়োগ।</br>
+                                ৯) অতিরিক্ত পরিমান বনভূমি ধ্বংস । </br>
+                                <br>
+                                <strong>মূলতঃ</strong> সাধারণ রাসায়নিক পদার্থ হিসেবে পেট্রোলিয়াম হাইড্রোজেন ও
+                                কার্বনের মিশ্রিত যৌগ, কীটনাশক, সীসা এবং অন্যান্য ভারী পদার্থ মৃত্তিকা দূষণের জন্যে দায়ী। <br>
+                                <br>
+                                    <h5 class="font-weight-bold">মৃত্তিকা দূষণের প্রভাব</h5>
+                                    <br>
+                                    ১) দূষিত মৃত্তিকায় উৎপন্ন ফসল খাদ্য হিসেবে খেলে মানুষ ক্যান্সারসহ বিভিন্ন রোগে আক্রান্ত হয়। <br>
+                                    ২) দূষিত মৃত্তিকায় গাছপালা জন্মায় না ফলে পরিবেশে অক্সিজেনের ঘাটতি দেখা দেয়। <br>
+                                    ৩) মৃত্তিকার উর্বরতা ও উৎপাদন ক্ষমতা নষ্ট হওয়ার ফলে ফসল ভাল জন্মায় না। <br>
+                                    ৪) দূষিত মৃত্তিকায় গাছপালা ও পশুপাখি মারা যায় এবং তাদের বাসস্থান ধ্বংস হয়। <br>
+                                    ৫) মৃত্তিকায় অতিমাত্রায় CO(NH<sub>2</sub>)<sub>2</sub>, (NH<sub>4</sub>)SO<sub>4</sub> ইত্যাদি সার প্রয়োগের ফলে উদ্ভিদ ও ফসলের উপকারী কীটপতঙ্গ, ব্যাকটেরিয়া ও অনুজীব  অকার্যকর হয়ে পড়ে। <br> 
+                                    <br>         
+                                    <h5 class="font-weight-bold">উর্বর মৃত্তিকার গুণাবলি</h5> <br>
+                                    ১. মৃত্তিকায় ফসলের সুষম বৃদ্ধির জন্য অত্যাবশ্যকীয় পুষ্টি উপাদানসমূহের উপস্থিতি। <br>
+                                    ২. অত্যাবশ্যকীয় পুষ্টি উপাদানসমূহের সুষম মাত্রায় উপস্থিতি। <br>
+                                    ৩. উদ্ভিদের গ্রহণোপযোগী আকারে পুষ্টি উপাদান সমূহের উপস্থিতি। <br>
+                                    ৪. মৃত্তিকায় উদ্ভিদের মূল সমষ্টির বৃদ্ধির অনুকুল অবস্থা বিদ্যমান থাকা। <br>
+                                    ৫. ক্ষতিকর ও বিষাক্ত যেকোন দ্রব্যের অনুপস্থিতি। <br>
+                                    ৬. মৃত্তিকায় সুষম পরিমাণ অনুজীবের উপস্থিতি। <br>
+                                    ৭. মৃত্তিকায় যথোপযুক্ত পরিমাণে জৈব পদার্থ বিদ্যমান থাকা। <br>
+                                    <br>
+                                    <h5 class="font-weight-bold"> মৃত্তিকা দূষণ রোধে করনীয়</h5>
+                                    <br>
+                                    ১) নির্দিষ্ট জায়গায় ময়লা - আবর্জনা ফেলা। <br>
+                                    ২) জমিতে জৈব সার যেমন - কম্পোষ্ট সার ব্যবহার করা। <br>
+                                    ৩) পলিথিন ব্যবহারের পরিবর্তে পাটের তৈরি ব্যাগ ব্যবহার করা। <br>
+                                    ৪) জিনিসপত্রের ব্যবহার কমানো ও পুন:ব্যবহার করা। <br>
+                                    ৫) বনভূমি ধ্বংস না করা বা বেশি করে গাছ লাগানো। <br>
+                                    ৬) রাসায়নিক বজ্র পদার্থ মাটিতে না ফেলা । <br>
+                                    ৭) আইন প্রণয়ন ও এর সঠিক ব্যবহার । <br>
+                                    ৮) জনসচেতেনতা বৃদ্ধি করা ।
+                                </p>
+                            </div> 
+                        </div>
+                    </div>
+                </section><br>
+                            <!-- Reference & Athour Section -->
+                <section id="reference-author-section">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="reference-author-text-color">Reference</h4>
+                            <p>
+                                <ol style="padding-inline-start: 25px; word-wrap: break-word;">
+                                    <li>
+                                        আধুনিক মৃত্তিকা বিজ্ঞান ( <i>প্রফেসর দেলোয়ার হোসেন হাওলাদার ও প্রফেসর হুমায়ূন কবির</i> &nbsp;)
+                                    </li>
+                                    <li>
+                                        https://gamingorstudy2.blogspot.com/2020/02/blog-post_20.html?m=1
+                                    </li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div><br>
+                    <div class="row pb-2">
+                        <div class="col">
+                            <h4 class="reference-author-text-color">Author</h4>
+                            <p style="font-size: 14px;">
+                                <a href="#">Mahmudul Hasan Sumon</a><br>
+                                Soil Science <br>
+                                Govt. Shaheed Suhrawardy College
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                        <!-- Previous & next Article Section -->
+                <section>
+                    <div class="container">
+                        <div class="row py-4 mb-3" id="previous-next-section">
+                            <div class="col-6" style="border-right: 1px solid gray;">
+                                <a href="jenny-equation.html">
+                                    <p class="text-primary"><b><i class="fa fa-angle-double-left"></i>&nbsp;Previous Article</b></p>
+                                    <p class="ml-3">মৃত্তিকা গঠনে জেনি'র সমীকরণ, সীমাবদ্ধতা ও Soil Maping এ এর ব্যবহার</p>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="soil-fertility.html">
+                                    <p class="text-primary"><b>Next Article&nbsp;<i class="fa fa-angle-double-right"></i></b></p>
+                                <p class="ml-3">মৃত্তিকার উর্বরতা কি, এর শ্রেণিবিন্যাস, উপাদান ও pH মান</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                            <!-- Post Share Section -->
+                <section id="share-post-section">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="row px=3 py-3 justify-content-center" id="icon-md-center">
+                                <div class="bg-dark text-light p-3">
+                                    <span class="mr-md-0 mr-3">
+                                        <i class="fa fa-share-square text-success align-self-center mr-2"></i>SHARE ON
+                                    </span>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+                                        <i class="fa fa-facebook rounded bg-primary  text-light py-2 px-3 ml-3 icon"></i>
+                                    </a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram">
+                                        <i class="fa fa-instagram rounded bg-danger text-light p-2 ml-2 icon"></i>
+                                    </a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                                        <i class="fa fa-twitter rounded bg-info text-light p-2 ml-2 mr-1 icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Related Article Section -->  
+                <section id="related-article-section">
+                    <div class="row py-3">
+                        <div class="col-12">
+                            <ul class="nav bg-secondary">
+                                <li class="nav-item">
+                                    <span class="nav-link bg-danger mr-md-5 py-3 border-0 related-article">
+                                        <h5>Related Article</h5>
+                                    </span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link bg-danger py-3 border-0 in-science">
+                                        <h5>In Soil Science</h5>
+                                    </span>
+                                </li>
+                            </ul
+                        </div>
+                        <div class="row pt-4 border related-article-item">
+                            <div class="col-md-8 col-12">
+                                <div class="row pb-3">
+                                    <div class="col-5">
+                                        <a href="soil-definition.html">
+                                            <img class="img-fluid rounded" src="img/Soil2.jpeg" alt="মৃত্তিকা">
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <a href="soil-definition.html">
+                                            <p class="bangla-font">মৃত্তিকার সংজ্ঞা, এর উপাদান ও প্রকারভেদ
+                                            </p>
+                                        </a>
+                                        <small>
+                                            <i>September 1, 2020</i>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col-5">
+                                        <a href="soil-pollution.html">
+                                            <img class="img-fluid rounded" src="img/soil pollution.jpg" alt="মৃত্তিকা দূষণ">
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <a href="soil-pollution.htmlv">
+                                            <p class="bangla-font">মৃত্তিকা দূষণ, এর কারণ, প্রকারভেদ ও প্রতিকার
+                                            </p>
+                                        </a>
+                                        <small>
+                                            <i>September 1, 2020</i>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col-5">
+                                        <a href="tree-plantation.html">
+                                            <img class="img-fluid rounded" src="img/soil.jpg" alt="বৃক্ষরোপণ">
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <a href="tree-plantation.html">
+                                            <p class="bangla-font">বৃক্ষরোপণ, এর প্রয়োজনীয়তা ও উপকারিতা
+                                            </p>
+                                        </a>
+                                        <small>
+                                            <i>September 1, 2020</i>
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- in-science-item -->
+                        <div class="row pt-4 border" id="in-science-item">
+                            <div class="col-md-8 col-12">
+                                <div class="row pb-3">
+                                    <div class="col-5">
+                                        <a href="soil-alive.html">
+                                            <img class="img-fluid rounded" src="img/soil-alive.jpg" alt="মৃত্তিকার জীবন">
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <a href="soil-alive.html">
+                                            <p class="bangla-font">মৃত্তিকা একটি জীবন্ত প্রাকৃতিক সত্ত্বা
+                                            </p>
+                                        </a>
+                                        <small>
+                                            <i>September 1, 2020</i>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col-5">
+                                        <a href="soil-definition.html">
+                                            <img class="img-fluid rounded" src="img/Soil2.jpeg" alt="মৃত্তিকা">
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <a href="soil-definition.html">
+                                            <p class="bangla-font">মৃত্তিকার সংজ্ঞা, এর উপাদান ও প্রকারভেদ
+                                            </p>
+                                        </a>
+                                        <small>
+                                            <i>September 1, 2020</i>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row pb-3">
+                                    <div class="col-5">
+                                        <a href="soil-pollution.html">
+                                            <img class="img-fluid rounded" src="img/soil pollution.jpg"  alt="মৃত্তিকা দূষণ">
+                                        </a>
+                                    </div>
+                                    <div class="col-7">
+                                        <a href="soil-pollution.htmlv">
+                                            <p class="bangla-font">মৃত্তিকা দূষণ, এর কারণ, প্রকারভেদ ও প্রতিকার
+                                            </p>
+                                        </a>
+                                        <small>
+                                            <i>September 1, 2020</i>
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-end py-3 mr-1">
+                                    <a href="soil-science.html" class="btn btn-success btn-sm">
+                                        See More &nbsp;<i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>  
+                <!-- Leave a Comment -->
+                <section>
+                    <div class="row pt-4 px-3">
+                        <h5 class="py-2"><span class="fa fa-square text-danger pr-2"></span>Leave A Comment</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <form action="">
+                                <input type="text" class="form-control my-2" name="name" placeholder="Name" required>
+                                <input type="email" class="form-control mb-2" name="email" placeholder="Email" required>
+                                <textarea name="comment" class="form-control mb-2" rows="5" placeholder="Comment" required></textarea>
+                                <button type="submit" class="btn btn-secondary mr-1">Comment</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <hr class="pt-1 bg-secondary">
+                        <!-- Article Section -->
+                <section>
+                    <div class="card border-0 mt-5">
+                        <div class="card-header border-0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <article>
+                                        <header>
+                                            <a href="soil-definition.html">
+                                                <h4 class="pb-3 card-text"> মৃত্তিকার সংজ্ঞা, এর উপাদান ও প্রকারভেদ &nbsp;| Soil Science</h4>
+                                            </a>
+                                        </header>
+                                        <footer>
+                                            <span><i class="fa fa-edit"></i>&nbsp; <a href="#">Mahmudul Hasan Sumon</a></span>&nbsp;&nbsp;
+                                            <span><i class="fa fa-calendar-check-o"></i> 1 day ago</span>&nbsp;&nbsp;
+                                            <span><small><b>in :</b></small><a class="pl-1" href="#"> Soil Science</a></span>&nbsp;&nbsp;
+                                            <span><i class="fa fa-eye"></i> 2</span>
+                                        </footer>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body py-1">
+                            <div class="row">
+                                <div class="col-md-5 col-12" id="post-article-img">
+                                    <a href="soil-definition.html">
+                                        <img class="img-fluid py-2" src="img/Soil2.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-7 col-12 pt-1">
+                                    <p class="card-text">Soil is the collection of natural bodies occupying portions of the earth's surface that support the plant growth and have properties due to the integrated effect of climate and vegetation acting upon parent material as conditioned by relief...
+                                    <br>
+                                    <span class="bangla-font">বিজ্ঞানী ডকোচেভ এর মতে, "মৃত্তিকা হল এমন এক গুরুত্বপূর্ণ প্রাকৃতিক বস্তু যা আবহাওয়া, ভূ-সংস্থান ও সময়ের প্রভাবে শিলা ও জৈব পদার্থ...
+                                    </span>    
+                                    </p>
+                                    <a class="btn btn-outline-success" href="soil-definition.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="card border border-0">
+                        <div class="card-header border border-0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <article>
+                                        <header>
+                                            <a href="jenny-equation.html">
+                                                <h4 class="pb-3 card-text"> মৃত্তিকা গঠনে জেনি'র সমীকরণ, সীমাবদ্ধতা ও Soil Maping এ এর ব্যবহার &nbsp;| Soil Science</h4>
+                                            </a>
+                                        </header>
+                                        <footer>
+                                            <span><i class="fa fa-edit"></i>&nbsp; <a href="#">Mahmudul Hasan Sumon</a></span>&nbsp;&nbsp;
+                                            <span><i class="fa fa-calendar-check-o"></i> 1 day ago</span>&nbsp;&nbsp;
+                                            <span><small><b>in :</b></small><a class="pl-1" href="#"> Soil Science</a></span>&nbsp;&nbsp;
+                                            <span><i class="fa fa-eye"></i> 2</span>
+                                        </footer>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body py-1">
+                            <div class="row">
+                                <div class="col-md-5 col-12" id="post-article-img">
+                                    <a href="jenny-equation.html">
+                                        <img class="img-fluid py-2" src="img/jenny equation1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-7 col-12 pt-1">
+                                    <p class="bangla-font">বিজ্ঞানী জেনি (Jenny, 1941) মৃত্তিকা গঠনে পাঁচটি স্বতন্ত্র উপাদান (factor) কে বিবেচনা করেন । যেহেতু মৃত্তিকা গঠনের প্রক্রিয়ার উপর মৃত্তিকার বৈশিষ্ট্য নির্ভর করে তাই তিনি মৃত্তিক গঠনের প্রক্রিয়া এবং মৃত্তিকার বৈশিষ্ট্যের সাথে সম্পর্ক রেখে মৃত্তিকা গঠনে একটি মৌলিক সমীকরণ প্রদান করেন। সমীকরনটি হলো- <br>
+                                        S= f ( cl, o, p, r, t . . .) <br>
+                                        এখানে, S= ...
+                                     <br>
+                                     <span class="bangla-font">
+                                        জেনি সমীকরণের কারণগুলি Geographic Information System ( GIS ) এ ডেটা স্তর হিসাবে রূপান্তরিত হয়ে মৃত্তিকার মানচিত্রের পূর্বাভাস দেয়...
+                                     </span>  
+                                    </p>
+                                    <a class="btn btn-outline-success" href="jenny-equation.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="card border-0">
+                        <div class="card-header border-0">
+                            <div class="row">
+                                <div class="col-12">
+                                    <article>
+                                        <header>
+                                            <a href="soil-pollution.html">
+                                                <h4 class="pb-3 card-text"> মৃত্তিকা দূষণ, এর কারণ, প্রকারভেদ ও প্রতিকার &nbsp;| Soil Science</h4>
+                                            </a>
+                                        </header>
+                                        <footer>
+                                            <span><i class="fa fa-edit"></i>&nbsp; <a href="#">Mahmudul Hasan Sumon</a></span>&nbsp;&nbsp;
+                                            <span><i class="fa fa-calendar-check-o"></i> 1 day ago</span>&nbsp;&nbsp;
+                                            <span><small><b>in :</b></small><a class="pl-1" href="#"> Soil Science</a></span>&nbsp;&nbsp;
+                                            <span><i class="fa fa-eye"></i> 2</span>
+                                        </footer>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body py-1">
+                            <div class="row">
+                                <div class="col-md-5 col-12" id="post-article-img">
+                                    <a href="soil-pollution.html">
+                                        <img class="img-fluid py-2" src="img/soil pollution.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="col-md-7 col-12 pt-1">
+                                    <p class="card-text">মৃত্তিকা দূষণ বা মাটি দূষণ বলতে রাসায়নিক বর্জ্যের নিক্ষেপ  কিংবা ভূ-গর্ভস্থ  ফাটলের কারণে নিঃসৃত বিষাক্ত রাসায়নিক পদার্থের  মিশ্রণের কারণে  জমির উর্বরতা শক্তি নষ্ট  হওয়াকে বুঝায়।
+                                    <br>
+                                    <span class="card-text">দূষণের প্রকৃতি অনুসারে মৃত্তিকা দূষণকে নিম্নোক্তভাবে ভাগ করা যায়- <br>
+                                        জীব সংক্রান্ত দূষণ, অজৈব পদার্থ ঘটিত দূষণ, এসিড দূষণ,... <br>
+                                        বিভিন্ন ভাবে মৃত্তিকা দূষিত হয় যথা-<br>
+                                        ভূ-তলে সংরক্ষিত ট্যাংকের জ্বালানি বিস্ফোরণ...
+                                    </span>    
+                                    </p>
+                                    <a class="btn btn-outline-success" href="soil-pollution.html">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <a href="home.html" class="btn btn-success my-3">See More Article &nbsp;<i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+<!-- Environmental Steward -->
+            <div class="col-md-4 col-12 py-md-4 py-3">
+                <section class="pb-3">
+                    <div class="card bg-warning">
+                        <div class="card-header">
+                            <div class="text-center text-success py-md-3 py-2">
+                                <h4 class="pt-2">BE AN ENVIRONMENTAL STEWARD</h4>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <form action="">
+                                <input type="text" class="form-control required mt-3" name="Name" placeholder="Your Name" required>
+                                <input type="email" class="form-control mt-4" name="email" placeholder="Your Email" required>
+                                <input type="text" class="form-control mt-4" name="Subject" placeholder="Subject" required>
+                                <textarea name="Message" id="" class="form-control my-4" placeholder="Your Messsage" rows="5" required></textarea>
+                                <hr>
+                                <button type="submit" class="btn btn-outline-success my-1">
+                                   Send &nbsp;<i class="fa fa-leaf"></i>
+                               </button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+        <!-- Submit Article -->
+                <section class="py-3">
+                    <div class="row py-3 px-3">
+                        <h5 class="py-2"><span class="fa fa-sign-in text-success pr-1"></span> SUBMIT YOUR ARTICLE </h5>
+                    </div>
+                    <div class="row pt-1">
+                        <div class="col">
+                           <a href="#">
+                            <img class="img-fluid rounded" src="img/article(SB)org.jpg" alt="">
+                           </a>
+                        </div>
+                    </div>
+                </section>
+        <!-- Popular Article -->
+                <section>
+                    <div class="row pt-4 px-3">
+                        <h5 class="py-2"><span class="fa fa-square text-danger pr-1"></span> POPULAR ARTICLE </h5>
+                    </div>
+                    <div class="row" id="popular-article">
+                        <div class="col-12">
+                            <div class="media pt-4">
+                                <a href="soil-definition.html">
+                                    <img src="img/Soil2.jpeg" alt="Nature" class="img-fluid rounded">
+                                </a>
+                                <div class="media-body pl-3" id="popular-article-post">
+                                    <a href="soil-definition.html">
+                                        <small>
+                                            <i>September 1, 2020</i>
+                                        </small>
+                                        <p class="bangla-font pt-3">মৃত্তিকার সংজ্ঞা, এর উপাদান ও প্রকারভেদ</p>
+                                    </a>     
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" id="popular-article">
+                        <div class="col-12">
+                            <div class="media pt-2">
+                                <a href="jenny-equation.html">
+                                    <img src="img/jenny equation1.jpg" alt="Nature" class="img-fluid rounded">
+                                </a>
+                                <div class="media-body pl-3" id="popular-article-post">
+                                    <a href="jenny-equation.html">
+                                        <small>
+                                            <i>September 1, 2020</i>
+                                        </small>
+                                        <p class="bangla-font pt-2">মৃত্তিকা গঠনে জেনি'র সমীকরণ, সীমাবদ্ধতা ও Soil Maping এ এর ব্যবহার</p>
+                                    </a>     
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row" id="popular-article">
+                        <div class="col-12">
+                            <div class="media pt-2">
+                                <a href="#">
+                                    <img src="img/soil.jpg" alt="Nature" class="img-fluid rounded">
+                                </a>
+                                <div class="media-body pl-3" id="popular-article-post">
+                                    <a href="#">
+                                        <small>
+                                            <i>September 1, 2020</i>
+                                        </small>
+                                        <p class="bangla-font pt-2">মৃত্তিকা একটি জীবন্ত প্রাকৃতিক সত্ত্বা</p>
+                                    </a>     
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col text-center">
+                            <button class="btn btn-outline-success my-3 load-more-post">Load More &nbsp;<i class="fa fa-chevron-circle-down"></i></button>
+                        </div>
+                    </div>
+                    <!-- Load More Post -->
+                    <section class="more-post">
+                        <div class="row" id="popular-article">
+                            <div class="col-12">
+                                <div class="media pt-2">
+                                    <img src="img/soil pollution.jpg" alt="মৃত্তিকা দূষণ" class="img-fluid rounded">
+                                    <div class="media-body pl-3" id="popular-article-post">
+                                        <a href="soil-pollution.html">
+                                            <small>
+                                                <i>September 1, 2020</i>
+                                            </small>
+                                            <p class="bangla-font pt-2">মৃত্তিকা দূষণ, এর কারণ, প্রকারভেদ ও প্রতিকার</p>
+                                        </a>     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row" id="popular-article">
+                            <div class="col-12">
+                                <div class="media pt-2">
+                                    <img src="img/tree-plantation.jpg" alt="বৃক্ষরোপণ" class="img-fluid rounded">
+                                    <div class="media-body pl-3" id="popular-article-post">
+                                        <a href="tree-plantation.html">
+                                            <small>
+                                                <i>September 1, 2020</i>
+                                            </small>
+                                            <p class="bangla-font pt-2">বৃক্ষরোপণ, এর প্রয়োজনীয়তা ও উপকারিতা</p>
+                                        </a>     
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </section>
+                </section>
+        <!-- Soil Science Article -->
+                <section class="pt-3">
+                    <div class="row px-3">
+                        <h5 class="py-2"><span class="fa fa-square text-danger pr-1"></span> SOIL SCIENCE</h5>
+                    </div>
+                    <div class="container">
+                        <div class="row pt-2 " id="soil-science-article">
+                            <div class="col-12">
+                                <div class="card text-center border border-0 py-2">
+                                    <a href="soil-definition.html">
+                                        <img class="img-fluid rounded" src="img/Soil2.jpeg" alt="nature">
+                                    </a>
+                                    <div class="card-body">
+                                      <a href="soil-definition.html">
+                                          <p class="bangla-font card-text">
+                                            মৃত্তিকার সংজ্ঞা, এর উপাদান ও প্রকারভেদ
+                                          </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="soil-science-article">
+                            <div class="col-12">
+                                <div class="card text-center border border-0 py-2">
+                                    <a href="jenny-equation.html">
+                                        <img class="img-fluid rounded" src="img/jenny equation1.jpg" alt="Soil">
+                                    </a>
+                                    <div class="card-body">
+                                      <a href="jenny-equation.html">
+                                          <p class="bangla-font card-text">
+                                            মৃত্তিকা গঠনে জেনি'র সমীকরণ, সীমাবদ্ধতা ও Soil Maping এ এর ব্যবহার
+                                          </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="soil-science-article">
+                            <div class="col-12">
+                                <div class="card text-center border border-0 pt-2">
+                                    <a href="soil-pollution.html">
+                                        <img class="img-fluid rounded" src="img/soil pollution.jpg" alt="nature">
+                                    </a>
+                                    <div class="card-body">
+                                      <a href="soil-pollution.html">
+                                          <p class="bangla-font card-text">
+                                            মৃত্তিকা দূষণ, এর কারণ, প্রকারভেদ ও প্রতিকার
+                                          </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="py-2">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <a href="soil-science.html" class="btn btn-success ">
+                                See More &nbsp;<i class="fa fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="pt-1">
+                    <div class="row py-3 px-3">
+                        <h5 class="py-2"><span class="fa fa-square text-danger pr-1"></span> ENVIRONMENTAL SCIENCE</h5>
+                    </div>
+                    <div class="container">
+                        <div class="row pt-1" id="environmental-science-article">
+                            <div class="col-12">
+                                <div class="card text-center border border-0 py-2">
+                                    <a href="environment-pollution.html">
+                                        <img class="img-fluid rounded" src="img/environment-pollution.jpg" alt="পরিবেশ দূষণ">
+                                    </a>
+                                    <div class="card-body">
+                                      <a href="environment-pollution.html">
+                                          <p class="bangla-font card-text">
+                                            পরিবেশ দূষণ, এর কারণ, প্রভাব ও প্রতিকার
+                                          </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="environmental-science-article">
+                            <div class="col-12">
+                                <div class="card text-center border border-0 py-2">
+                                    <a href="tree-plantation.html">
+                                        <img class="img-fluid rounded" src="img/tree-plantation.jpg" alt="বৃক্ষরোপণ">
+                                    </a>
+                                    <div class="card-body">
+                                      <a href="tree-plantation.html">
+                                          <p class="bangla-font card-text">
+                                            বৃক্ষরোপণ, এর প্রয়োজনীয়তা ও উপকারিতা
+                                          </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="environmental-science-article">
+                            <div class="col-12">
+                                <div class="card text-center border border-0 pt-2">
+                                    <a href="climate-change.html">
+                                        <img class="img-fluid rounded" src="img/Soil2.jpeg" alt="জলবায়ু পরিবর্তন">
+                                    </a>
+                                    <div class="card-body">
+                                      <a href="climate-change.html">
+                                          <p class="bangla-font card-text">
+                                            জলবায়ু পরিবর্তন, এর কারণ, প্রভাব ও প্রতিকার
+                                          </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section>
+                        <div class="row justify-content-center py-2">
+                            <a href="environmental-science.html" class="btn btn-success ">
+                                See More &nbsp;<i class="fa fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </section>
+                </section>
+                <!-- Gallery Section -->
+                <section class="pt-5 text-center" id="gallery-section">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="demo" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" id="gallery-img-size">
+                                    <div class="carousel-item active">
+                                        <a href="soil-definition.html">
+                                            <img src="img/soil2.jpeg" class="img-fluid" alt="মৃত্তিকা">
+                                        </a>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <a href="rock.html">
+                                            <img src="img/Rocks.jpg" class="img-fluid" alt="শিলা">
+                                        </a>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <a href="soil-pollution.html">
+                                            <img src="img/soil pollution.jpg" class="img-fluid" alt="মৃত্তিকা দূষণ">
+                                        </a>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <a href="tree-plantation.html">
+                                            <img src="img/tree-plantation.jpg" class="img-fluid" alt="বৃক্ষরোপণ">
+                                        </a>
+                                      </div>
+                                  </div>
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                  <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo" data-slide="next">
+                                  <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center pt-4">
+                        <a href="gallery.html" class="btn btn-success ">
+                            See Gallery &nbsp;<i class="fa fa-angle-double-right"></i>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+</div>
+<section class="container bg-light py-1">
+    <hr class="bg-info rounded-circle pb-1">
+</section>
+        <!-- Environmental News -->
+<div class="container bg-light">
+    <section class="py-1" id="environmental-news">
+        <div class="row">
+            <div class="col-12 pb-4">
+                <h5 class="pb-2 text-success"><span class="fa fa-newspaper-o text-info pr-1"></span> ENVIRONMENTAL NEWS <span>______</span></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-12 pb-2">
+                <div class="row">
+                    <div class="col-5">
+                        <a href="#">
+                            <img class="img-fluid rounded" src="img/soil pollution.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <a href="#">
+                            <p class="bangla-font">পরিবেশ রক্ষার্থে অরণ্যের বৃক্ষরোপণ কর্মসূচী</p>
+                        </a>
+                        <small>
+                            <i>September 1, 2020</i>
+                        </small>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 pt-1">
+                <div class="row">
+                    <div class="col-5">
+                        <a href="#">
+                            <img class="img-fluid rounded" src="img/soil.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <a href="#">
+                            <p class="bangla-font">পরিবেশ রক্ষার্থে অরণ্যের বৃক্ষরোপণ কর্মসূচী</p>
+                        </a>
+                        <small>
+                            <i>September 1, 2020</i>
+                        </small>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6 col-12 pb-2">
+                <div class="row">
+                    <div class="col-5">
+                        <a href="#">
+                            <img class="img-fluid rounded" src="img/soil.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <a href="#">
+                            <p class="bangla-font">পরিবেশ রক্ষার্থে অরণ্যের বৃক্ষরোপণ কর্মসূচী</p>
+                        </a>
+                        <small>
+                            <i>September 1, 2020</i>
+                        </small>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 pt-1">
+                <div class="row">
+                    <div class="col-5">
+                        <a href="#">
+                            <img class="img-fluid rounded" src="img/soil.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-7">
+                        <a href="#">
+                            <p class="bangla-font">পরিবেশ রক্ষার্থে অরণ্যের বৃক্ষরোপণ কর্মসূচী</p>
+                        </a>
+                        <small>
+                            <i>September 1, 2020</i>
+                        </small>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center pt-md-5 pt-2 pb-2">
+            <div class="col-md-9 col-12">
+                <a class="btn btn-info" href="environmental-news.html">More News &nbsp;<i class="fa fa-angle-double-right text-light"></i></a>
+            </div>
+        </div>
+    </section>
+    <hr>
+                    <!-- Opinion & Calendar Section -->
+    <section id="opinion-calander-section">
+        <div class="container">
+            <div class="row pt-3 pb-5">
+                <div class="col-md-7 col-12">
+                    <div class="row">
+                        <h5 class="py-2"><span class="fa fa-pencil-square-o text-warning mr-2"></span>OPINION</h5>
+                    </div>
+                    <div class="row pt-4" id="opinion-section">
+                        <div class="col-md-3 col-12 text-center">
+                            <img src="img/icon(SB).png" alt="" style="width: 100px; border-radius: 50%;" class="img-fluid">
+                        </div>
+                        <div class="col-md-9 col-12 pt-md-0 pt-4">
+                            <h5>Hamid Al Azad</h5>
+                            <i>Head, Soil Science Department</i>
+                            <p><strong> Govt. Shaheed Suhrawary College</strong></p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ipsa est consectetur cupiditate. Ut sint consequatur id cupiditate porro tempora.</p>
+                        </div> 
+                    </div>
+                    <div class="row pt-4" id="opinion-section">
+                        <div class="col-md-3 col-12 text-center">
+                            <img src="img/icon(SB).png" alt="" style="width: 100px; border-radius: 50%;" class="img-fluid">
+                        </div>
+                        <div class="col-md-9 col-12 pt-md-0 pt-4">
+                            <h5>Hamid Al Azad</h5>
+                            <i>Head, Soil Science Department</i>
+                            <p><strong> Govt. Shaheed Suhrawary College</strong></p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ipsa est consectetur cupiditate. Ut sint consequatur id cupiditate porro tempora.</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-md-5 col-12 pt-md-0 pt-2">
+                    <div class="row">
+                        <h5 class="py-2"><i class="fa fa-calendar text-warning mr-2"></i>CALENDAR</h5>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-3" id="calendar">
+                            <div class="">
+                                <div class="bg-warning py-3 text-center" id="calendar-month">
+                                    <h3 class="py-2 py-1" id = "month" >Month</h3>
+                                    <h4 id="year">Year</h4>
+                                </div>
+                                <div class="">
+                                    <ul id="calendar-week">
+                                        <li>SUN</li>
+                                        <li>MON</li>
+                                        <li>TUE</li>
+                                        <li>WED</li>
+                                        <li>THU</li>
+                                        <li>FRI</li>
+                                        <li>SAT</li>
+                                    </ul>
+                                    <ul id="calendar-days">
+                                        <li id="date1"></li>
+                                        <li id="date2"></li>
+                                        <li id="date3"></li>
+                                        <li id="date4"></li>
+                                        <li id="date5"></li>
+                                        <li id="date6"></li>
+                                        <li id="date7"></li>
+                                        <li id="date8"></li>
+                                        <li id="date9"></li>
+                                        <li id="date10"></li>
+                                        <li id="date11"></li>
+                                        <li id="date12"></li>
+                                        <li id="date13"></li>
+                                        <li id="date14"></li>
+                                        <li id="date15"></li>
+                                        <li id="date16"></li>
+                                        <li id="date17"></li>
+                                        <li id="date18"></li>
+                                        <li id="date19"></li>
+                                        <li id="date20"></li>
+                                        <li id="date21"></li>
+                                        <li id="date22"></li>
+                                        <li id="date23"></li>
+                                        <li id="date24"></li>
+                                        <li id="date25"></li>
+                                        <li id="date26"></li>
+                                        <li id="date27"></li>
+                                        <li id="date28"></li>
+                                        <li id="date29"></li>
+                                        <li id="date30"></li>
+                                        <li id="date31"></li>
+                                        <li id="date32"></li>
+                                        <li id="date33"></li>
+                                        <li id="date34"></li>
+                                        <li id="date35"></li>
+                                      </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+                    <!-- Footer Section -->
+<footer class="bg-dark pt-3 text-light" id="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12 pt-3">
+                <div class="row justify-content-center">
+                    <div class="col-">
+                        <p><i class="text-danger">*</i> For Daily Newsletter</p>
+                        <form action="">
+                            <input type="email" name="email" class="form-control mb-2" placeholder="Your Email" required>
+                            <button class="btn btn-outline-danger form-control mb-3" type="submit">SUBSCRIBE
+                            </button> 
+                        </form>
+                        <p><i>You can unsubscribe anytime.</i></p>
+                    </div>
+                </div>
+                <hr class="bg-success d-md-none d-block">
+            </div>
+            <div class="col-md-6 col-12 pt-3">
+                <div class="row" id="md-center">
+                    <div class="col-12 justify-content-center">
+                        <h5><span class="fa fa-window-maximize text-success align-self-center" style="font-size: 15px;"></span>&nbsp; ABOUT US</h5>
+                    </div>
+                </div>
+                <div class="row px-3 pt-2"x>
+                    <p class="" style="color: rgb(192, 192, 192); font-size: 14px;">“Soil Book” is an informational and research-based organization (soilbook.org) in Bangladesh that was established in 2020. Mahmudul Hasan Sumon is the founder of the organization. It spread environmental knowledge by writing and sharing conceptual articles related to Soil Science, Environmental Science, Hydrology, and Disaster Management as a part of rising Environmental Awareness.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-12 pt-3">
+                <div class="row"  id="md-center">
+                    <div class="col-12 justify-content-center">
+                        <h5><span class="fa fa-share-square text-success align-self-center" style="font-size: 15px;"></span>&nbsp; FOLLOW US</h5>
+                    </div>
+                </div>
+                <div class="row px=3 pt-3" id="icon-md-center">
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook">
+                        <i class="fa fa-facebook rounded bg-primary  text-light ml-3 icon"></i>
+                    </a>
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram">
+                        <i class="fa fa-instagram rounded bg-danger text-light ml-2 icon"></i>
+                    </a>
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter">
+                        <i class="fa fa-twitter rounded bg-info text-light ml-2 icon"></i>
+                    </a>
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Email">
+                        <i class="fa fa-google rounded bg-danger text-light ml-2 icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-success">
+        <div class="row text-center" id="footer-part">
+            <div class="col-12 pt-2 pb-4">
+                <a href="home.html" >Home </a>
+                <a href="preface.html"> Preface </a>
+                <a href="gallery.html"> Gallery </a>
+                <a href="contact-us.html"> Contact Us </a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <p class="text-footer"style="color: rgb(192, 192, 192);"> All rights reserved by &nbsp;SOiL BOOK &nbsp;|&nbsp; &copy; Copyright 2020 .</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="style.js"></script>
+</body>
+</html>
